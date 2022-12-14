@@ -1,0 +1,53 @@
+<!--Signify that the document type is HTML-->
+<!DOCTYPE html>
+<!--Start HTML tag-->
+<!--Set language to English-->
+<html lang="en">
+<!--Start head tag-->
+<head>
+<!--Create title tag and name it-->
+    <title>Thunderstorm</title>
+    <!--Implement CSS with style tag-->
+<style>
+    body {
+    /*Add background image*/
+        background-image: url(lightning.gif);
+    /*Adjust the background image to not repeat*/
+        background-repeat: no-repeat;
+    /*Resize the background image to make it fit the screen*/
+        background-size: 100% 245%;
+    /*Align the text and gif to the center*/
+        text-align: center;
+    /*Change font color*/
+        color: blanchedalmond;
+    /*Change font style*/
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    /*Make font bold*/
+        font-weight: bold;
+    /*Change font size*/
+        font-size: 20px;
+    }
+/*End CSS/style tag*/
+</style>
+<!--End head tag-->
+</head>
+<!--Start body tag-->
+<body>
+    <!--Add header message-->
+    <h1>Calm Thunderstorm</h1>
+    <!--Add lines describing what to do and what to expect-->
+    <p>To start the sound, press the play button.</p>
+    <p>The sound is on a loop so that your peace doesn't get inturupted by the sound stopping.</p>
+    <!--Add audio tag to use the desired audio-->
+    <!--The loop in audio control makes the song/sound loop-->
+    <audio loop controls> 
+        <!--Bring in the sound-->
+        <source src="Rain and Thunder.mp3">
+    <!--End audio tag-->
+    </audio>
+    <!--Add another line of text to make clear how to stop the sound-->
+    <p>To stop the sound, just press the pause button.</p>
+<!--End body tag-->
+</body>
+<!--End HTML tag-->
+</html>

@@ -1,0 +1,99 @@
+<!--Megan Izzo-->
+<!DOCTYPE html>
+<!--Never forget to add doctype-->
+<!--Start of code-->
+<html>
+
+<head>
+  <!--This is the image-->
+  <img src="UAT Space Mission Logo.jpg" alt="UAT Space Logo" style="width:250px;height:250px;">
+  <!--The first one is to center the image-->
+  <!--The fourth one is for the body.-->
+  <!--This holds the background image and the adjustments for it.-->
+  <!--Font style and color for the body text-->
+  <style>
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    body {
+      background-image: url(RainbowSpace.jpg);
+      background-repeat: no-repeat;
+      background-size: 125% 130%;
+      text-align: center;
+      color: honeydew;
+      font-size: 25px;
+      font-family: monospace;
+    }
+    button {
+      padding: auto;
+      margin: auto;
+      background-color: honeydew;
+      border: 5px;
+      font-size: 18px;
+      font-family: monospace;
+    }
+  </style>
+
+  <!--This is the title of the page-->
+  <title> UAT Space Program</title>
+</head>
+
+<body>
+  <!--This is the header-->
+  <h1>Preparing For Takeoff...</h1>
+  <!--Question to ask the user What they want to do-->
+  <p> Initiate takeoff sequence?</p>
+
+  <!--Create an Id and container-->
+  <div id="countdown">
+    <div id="countdown-number">10 seconds</div>
+  </div>
+
+  <!--Create the buttons and assign them to their values-->
+  <button id="stop" onclick="stopTimer()">Abort</button>
+  <button id="start" onclick="startTimer()">Affirmative</button>
+  <button id="reset" onclick="resetTimer()">Reset</button>
+
+  <script>
+    //Set the time//
+    var remainingTime = 10;
+    //Stops timer//
+    var isStopped = false;
+    //Resets timer to 10//
+    function resetTimer(){
+      isStopped = false;
+      remainingTime = 10;
+    }
+    //Stops the timer when button is pressed//
+    function stopTimer() {
+      isStopped = true;
+    }
+    //Starts the timer when the button is pressed//
+    function startTimer() {      
+      //Create countdown timer here//
+      var myTimer = setInterval(function () {
+      //Decreases time and shows remaining time//
+        if (isStopped === false) {
+          document.getElementById("countdown-number").innerHTML = remainingTime;
+          remainingTime--;
+        //Stops timer and sets off alert//
+          if (remainingTime < -1) {
+            clearInterval(myTimer)
+            document.getElementById("countdown-number").innerHTML = "BLAST OFF!";
+            alert("BLAST OFF!");
+          }
+        }
+        else
+        {
+          // do nothing
+        }
+      }, 1000);
+    } 
+  </script>
+
+</body>
+
+</html>

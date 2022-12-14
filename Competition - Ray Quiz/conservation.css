@@ -1,0 +1,13 @@
+h1 {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+p {
+    justify-content: space-around;
+    display: flex;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}

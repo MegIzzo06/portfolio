@@ -1,0 +1,66 @@
+body {
+    background-image: url("LATTICE.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100.5%;
+    font-family: monospace;
+    color: aliceblue;
+    text-align: center;
+    font-size: large;
+    min-height: 97vh;
+    display: flex;
+    flex-direction: column;
+    font-family: monospace;
+}
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+h1, h2, p, ol, li {
+    text-shadow: 2px 2px 0 black,
+                 -2px -2px 0 black,
+                 2px -2px 0 black,
+                 -2px 2px 0 black;
+}
+nav {
+    background-color: black;
+    height: 30px;
+    font-size: 20px;
+}
+div {
+    width: 950px;
+    height: 550px;
+    padding: 8px;
+    margin-left: 200px;
+    margin-right: auto;
+    margin-bottom: 4px;
+    background-color: black;
+    text-align: center;
+    display: block;
+}
+footer {
+    margin-top: auto;
+    display: block;
+    padding: 2px;
+    background-color: black;
+    color: darkviolet;
+    font-size: 15px;
+    font-weight: bold;
+}
+img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 175px;
+    border: 5px solid hotpink;
+}
+ol, li {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    color: aliceblue;
+}
+a {
+    color: cyan;
+    font-weight: bold;
+
+}
